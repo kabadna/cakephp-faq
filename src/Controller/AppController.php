@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Kabadna\CakephpFaq\Controller;
+namespace Kabadna\Cakephp\Faq\Controller;
 
 use App\Controller\AppController as BaseController;
 
