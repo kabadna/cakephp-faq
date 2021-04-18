@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace CakephpFaq;
+namespace Kabadna\CakephpFaq;
 
 use Cake\Core\BasePlugin;
 use Cake\Core\PluginApplicationInterface;
