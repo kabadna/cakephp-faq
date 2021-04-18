@@ -12,12 +12,12 @@
     },
     "autoload": {
         "psr-4": {
-            "CakephpFaq\\": "src/"
+            "Kabadna\\CakephpFaq\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CakephpFaq\\Test\\": "tests/",
+            "Kabadna\\CakephpFaq\\Test\\": "tests/",
             "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
         }
     }
