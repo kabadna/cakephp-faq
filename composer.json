@@ -1,0 +1,24 @@
+{
+    "name": "kabadna/cakephp-faq",
+    "description": "FAQ plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2",
+        "cakephp/cakephp": "~4.1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CakephpFaq\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CakephpFaq\\Test\\": "tests/",
+            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
+        }
+    }
+}
