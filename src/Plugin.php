@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Kabadna\Cakephp\Faq;
+namespace CakephpFaq;
 
 use Cake\Core\BasePlugin;
 use Cake\Core\PluginApplicationInterface;
@@ -38,7 +38,7 @@ class Plugin extends BasePlugin
     public function routes(RouteBuilder $routes): void
     {
         $routes->plugin(
-            'Faq',
+            'CakephpFaq',
             ['path' => '/faq'],
             function (RouteBuilder $builder) {
                 // Add custom routes here
