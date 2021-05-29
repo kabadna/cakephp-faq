@@ -48,8 +48,8 @@ class CreateFaqs extends AbstractMigration
             'default' => null,
             'limit' => 11,
         ]);
-        $table->addColumn('when', 'datetime', [
-            'comment' => '公開日',
+        $table->addColumn('when_write', 'datetime', [
+            'comment' => '記述日',
             'null' => true,
             'default' => null,
         ]);

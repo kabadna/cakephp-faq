@@ -46,8 +46,8 @@ class FaqCategoriesFixture extends TestFixture
                 'id' => 1,
                 'name' => 'Lorem ipsum dolor sit amet',
                 'sort_seq' => 1,
-                'created' => '2021-05-06 09:38:49',
-                'modified' => '2021-05-06 09:38:49',
+                'created' => '2021-05-29 18:04:51',
+                'modified' => '2021-05-29 18:04:51',
             ],
         ];
         parent::init();

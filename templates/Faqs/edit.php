@@ -27,7 +27,7 @@
                     echo $this->Form->control('open_period_from');
                     echo $this->Form->control('open_period_to');
                     echo $this->Form->control('faq_category_id', ['options' => $faqCategories, 'empty' => true]);
-                    echo $this->Form->control('when', ['empty' => true]);
+                    echo $this->Form->control('when_write', ['empty' => true]);
                     echo $this->Form->control('sort_seq');
                 ?>
             </fieldset>

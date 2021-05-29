@@ -51,7 +51,7 @@
                             <th><?= __('Open Period From') ?></th>
                             <th><?= __('Open Period To') ?></th>
                             <th><?= __('Faq Category Id') ?></th>
-                            <th><?= __('When') ?></th>
+                            <th><?= __('When Write') ?></th>
                             <th><?= __('Sort Seq') ?></th>
                             <th><?= __('Created') ?></th>
                             <th><?= __('Modified') ?></th>
@@ -65,7 +65,7 @@
                             <td><?= h($faqs->open_period_from) ?></td>
                             <td><?= h($faqs->open_period_to) ?></td>
                             <td><?= h($faqs->faq_category_id) ?></td>
-                            <td><?= h($faqs->when) ?></td>
+                            <td><?= h($faqs->when_write) ?></td>
                             <td><?= h($faqs->sort_seq) ?></td>
                             <td><?= h($faqs->created) ?></td>
                             <td><?= h($faqs->modified) ?></td>

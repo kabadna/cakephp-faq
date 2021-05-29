@@ -14,12 +14,12 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime $open_period_from
  * @property \Cake\I18n\FrozenTime $open_period_to
  * @property int|null $faq_category_id
- * @property \Cake\I18n\FrozenTime|null $when
+ * @property \Cake\I18n\FrozenTime|null $when_write
  * @property int|null $sort_seq
  * @property \Cake\I18n\FrozenTime|null $created
  * @property \Cake\I18n\FrozenTime|null $modified
  *
- * @property \CakephpFaq\Model\Entity\FaqCategory $faq_category
+ * @property \Faq\Model\Entity\FaqCategory $faq_category
  */
 class Faq extends Entity
 {
@@ -38,7 +38,7 @@ class Faq extends Entity
         'open_period_from' => true,
         'open_period_to' => true,
         'faq_category_id' => true,
-        'when' => true,
+        'when_write' => true,
         'sort_seq' => true,
         'created' => true,
         'modified' => true,

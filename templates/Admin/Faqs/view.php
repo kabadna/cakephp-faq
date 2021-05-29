@@ -47,8 +47,8 @@
                     <td><?= h($faq->open_period_to) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('When') ?></th>
-                    <td><?= h($faq->when) ?></td>
+                    <th><?= __('When Write') ?></th>
+                    <td><?= h($faq->when_write) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Created') ?></th>

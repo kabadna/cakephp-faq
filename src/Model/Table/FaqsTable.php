@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Faq\Model\Table;
 
+use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
@@ -11,6 +12,7 @@ use Cake\Validation\Validator;
  * Faqs Model
  *
  * @property \Faq\Model\Table\FaqCategoriesTable&\Cake\ORM\Association\BelongsTo $FaqCategories
+ *
  * @method \Faq\Model\Entity\Faq newEmptyEntity()
  * @method \Faq\Model\Entity\Faq newEntity(array $data, array $options = [])
  * @method \Faq\Model\Entity\Faq[] newEntities(array $data, array $options = [])
@@ -24,6 +26,7 @@ use Cake\Validation\Validator;
  * @method \Faq\Model\Entity\Faq[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
  * @method \Faq\Model\Entity\Faq[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
  * @method \Faq\Model\Entity\Faq[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
+ *
  * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class FaqsTable extends Table
@@ -83,8 +86,8 @@ class FaqsTable extends Table
             ->notEmptyDateTime('open_period_to');
 
         $validator
-            ->dateTime('when')
-            ->allowEmptyDateTime('when');
+            ->dateTime('when_write')
+            ->allowEmptyDateTime('when_write');
 
         $validator
             ->integer('sort_seq')

@@ -14,7 +14,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime|null $created
  * @property \Cake\I18n\FrozenTime|null $modified
  *
- * @property \CakephpFaq\Model\Entity\Faq[] $faqs
+ * @property \Faq\Model\Entity\Faq[] $faqs
  */
 class FaqCategory extends Entity
 {

@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace Faq\Model\Table;
 
+use Cake\ORM\Query;
+use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
@@ -10,6 +12,7 @@ use Cake\Validation\Validator;
  * FaqCategories Model
  *
  * @property \Faq\Model\Table\FaqsTable&\Cake\ORM\Association\HasMany $Faqs
+ *
  * @method \Faq\Model\Entity\FaqCategory newEmptyEntity()
  * @method \Faq\Model\Entity\FaqCategory newEntity(array $data, array $options = [])
  * @method \Faq\Model\Entity\FaqCategory[] newEntities(array $data, array $options = [])
@@ -23,6 +26,7 @@ use Cake\Validation\Validator;
  * @method \Faq\Model\Entity\FaqCategory[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
  * @method \Faq\Model\Entity\FaqCategory[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
  * @method \Faq\Model\Entity\FaqCategory[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
+ *
  * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class FaqCategoriesTable extends Table

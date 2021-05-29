@@ -17,7 +17,7 @@
                     <th><?= $this->Paginator->sort('open_period_from') ?></th>
                     <th><?= $this->Paginator->sort('open_period_to') ?></th>
                     <th><?= $this->Paginator->sort('faq_category_id') ?></th>
-                    <th><?= $this->Paginator->sort('when') ?></th>
+                    <th><?= $this->Paginator->sort('when_write') ?></th>
                     <th><?= $this->Paginator->sort('sort_seq') ?></th>
                     <th><?= $this->Paginator->sort('created') ?></th>
                     <th><?= $this->Paginator->sort('modified') ?></th>
@@ -33,7 +33,7 @@
                     <td><?= h($faq->open_period_from) ?></td>
                     <td><?= h($faq->open_period_to) ?></td>
                     <td><?= $faq->has('faq_category') ? $this->Html->link($faq->faq_category->name, ['controller' => 'FaqCategories', 'action' => 'view', $faq->faq_category->id]) : '' ?></td>
-                    <td><?= h($faq->when) ?></td>
+                    <td><?= h($faq->when_write) ?></td>
                     <td><?= $this->Number->format($faq->sort_seq) ?></td>
                     <td><?= h($faq->created) ?></td>
                     <td><?= h($faq->modified) ?></td>

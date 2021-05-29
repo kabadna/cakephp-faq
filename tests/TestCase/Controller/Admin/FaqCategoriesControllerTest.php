@@ -10,7 +10,7 @@ use Faq\Controller\Admin\FaqCategoriesController;
 /**
  * CakephpFaq\Controller\Admin\FaqCategoriesController Test Case
  *
- * @uses \CakephpFaq\Controller\Admin\FaqCategoriesController
+ * @uses \Faq\Controller\Admin\FaqCategoriesController
  */
 class FaqCategoriesControllerTest extends TestCase
 {

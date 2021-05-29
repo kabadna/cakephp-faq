@@ -10,7 +10,7 @@ use Faq\Controller\FaqCategoriesController;
 /**
  * CakephpFaq\Controller\FaqCategoriesController Test Case
  *
- * @uses \CakephpFaq\Controller\FaqCategoriesController
+ * @uses \Faq\Controller\FaqCategoriesController
  */
 class FaqCategoriesControllerTest extends TestCase
 {
@@ -22,7 +22,7 @@ class FaqCategoriesControllerTest extends TestCase
      * @var array
      */
     protected $fixtures = [
-        'plugin.CakephpFaq.FaqCategories',
+        'plugin.Faq.FaqCategories',
     ];
 
     /**
