@@ -7,14 +7,14 @@ use Cake\TestSuite\TestCase;
 use Faq\Model\Table\FaqCategoriesTable;
 
 /**
- * CakephpFaq\Model\Table\FaqCategoriesTable Test Case
+ * Faq\Model\Table\FaqCategoriesTable Test Case
  */
 class FaqCategoriesTableTest extends TestCase
 {
     /**
      * Test subject
      *
-     * @var \CakephpFaq\Model\Table\FaqCategoriesTable
+     * @var \Faq\Model\Table\FaqCategoriesTable
      */
     protected $FaqCategories;
 

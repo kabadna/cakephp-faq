@@ -9,20 +9,20 @@ use Cake\Validation\Validator;
 /**
  * FaqCategories Model
  *
- * @property \CakephpFaq\Model\Table\FaqsTable&\Cake\ORM\Association\HasMany $Faqs
- * @method \CakephpFaq\Model\Entity\FaqCategory newEmptyEntity()
- * @method \CakephpFaq\Model\Entity\FaqCategory newEntity(array $data, array $options = [])
- * @method \CakephpFaq\Model\Entity\FaqCategory[] newEntities(array $data, array $options = [])
- * @method \CakephpFaq\Model\Entity\FaqCategory get($primaryKey, $options = [])
- * @method \CakephpFaq\Model\Entity\FaqCategory findOrCreate($search, ?callable $callback = null, $options = [])
- * @method \CakephpFaq\Model\Entity\FaqCategory patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
- * @method \CakephpFaq\Model\Entity\FaqCategory[] patchEntities(iterable $entities, array $data, array $options = [])
- * @method \CakephpFaq\Model\Entity\FaqCategory|false save(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \CakephpFaq\Model\Entity\FaqCategory saveOrFail(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \CakephpFaq\Model\Entity\FaqCategory[]|\Cake\Datasource\ResultSetInterface|false saveMany(iterable $entities, $options = [])
- * @method \CakephpFaq\Model\Entity\FaqCategory[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
- * @method \CakephpFaq\Model\Entity\FaqCategory[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
- * @method \CakephpFaq\Model\Entity\FaqCategory[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
+ * @property \Faq\Model\Table\FaqsTable&\Cake\ORM\Association\HasMany $Faqs
+ * @method \Faq\Model\Entity\FaqCategory newEmptyEntity()
+ * @method \Faq\Model\Entity\FaqCategory newEntity(array $data, array $options = [])
+ * @method \Faq\Model\Entity\FaqCategory[] newEntities(array $data, array $options = [])
+ * @method \Faq\Model\Entity\FaqCategory get($primaryKey, $options = [])
+ * @method \Faq\Model\Entity\FaqCategory findOrCreate($search, ?callable $callback = null, $options = [])
+ * @method \Faq\Model\Entity\FaqCategory patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
+ * @method \Faq\Model\Entity\FaqCategory[] patchEntities(iterable $entities, array $data, array $options = [])
+ * @method \Faq\Model\Entity\FaqCategory|false save(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \Faq\Model\Entity\FaqCategory saveOrFail(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \Faq\Model\Entity\FaqCategory[]|\Cake\Datasource\ResultSetInterface|false saveMany(iterable $entities, $options = [])
+ * @method \Faq\Model\Entity\FaqCategory[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
+ * @method \Faq\Model\Entity\FaqCategory[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
+ * @method \Faq\Model\Entity\FaqCategory[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
  * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class FaqCategoriesTable extends Table
@@ -45,7 +45,7 @@ class FaqCategoriesTable extends Table
 
         $this->hasMany('Faqs', [
             'foreignKey' => 'faq_category_id',
-            'className' => 'CakephpFaq.Faqs',
+            'className' => 'Faq.Faqs',
         ]);
     }
 

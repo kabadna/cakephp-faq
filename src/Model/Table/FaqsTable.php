@@ -10,20 +10,20 @@ use Cake\Validation\Validator;
 /**
  * Faqs Model
  *
- * @property \CakephpFaq\Model\Table\FaqCategoriesTable&\Cake\ORM\Association\BelongsTo $FaqCategories
- * @method \CakephpFaq\Model\Entity\Faq newEmptyEntity()
- * @method \CakephpFaq\Model\Entity\Faq newEntity(array $data, array $options = [])
- * @method \CakephpFaq\Model\Entity\Faq[] newEntities(array $data, array $options = [])
- * @method \CakephpFaq\Model\Entity\Faq get($primaryKey, $options = [])
- * @method \CakephpFaq\Model\Entity\Faq findOrCreate($search, ?callable $callback = null, $options = [])
- * @method \CakephpFaq\Model\Entity\Faq patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
- * @method \CakephpFaq\Model\Entity\Faq[] patchEntities(iterable $entities, array $data, array $options = [])
- * @method \CakephpFaq\Model\Entity\Faq|false save(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \CakephpFaq\Model\Entity\Faq saveOrFail(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \CakephpFaq\Model\Entity\Faq[]|\Cake\Datasource\ResultSetInterface|false saveMany(iterable $entities, $options = [])
- * @method \CakephpFaq\Model\Entity\Faq[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
- * @method \CakephpFaq\Model\Entity\Faq[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
- * @method \CakephpFaq\Model\Entity\Faq[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
+ * @property \Faq\Model\Table\FaqCategoriesTable&\Cake\ORM\Association\BelongsTo $FaqCategories
+ * @method \Faq\Model\Entity\Faq newEmptyEntity()
+ * @method \Faq\Model\Entity\Faq newEntity(array $data, array $options = [])
+ * @method \Faq\Model\Entity\Faq[] newEntities(array $data, array $options = [])
+ * @method \Faq\Model\Entity\Faq get($primaryKey, $options = [])
+ * @method \Faq\Model\Entity\Faq findOrCreate($search, ?callable $callback = null, $options = [])
+ * @method \Faq\Model\Entity\Faq patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
+ * @method \Faq\Model\Entity\Faq[] patchEntities(iterable $entities, array $data, array $options = [])
+ * @method \Faq\Model\Entity\Faq|false save(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \Faq\Model\Entity\Faq saveOrFail(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \Faq\Model\Entity\Faq[]|\Cake\Datasource\ResultSetInterface|false saveMany(iterable $entities, $options = [])
+ * @method \Faq\Model\Entity\Faq[]|\Cake\Datasource\ResultSetInterface saveManyOrFail(iterable $entities, $options = [])
+ * @method \Faq\Model\Entity\Faq[]|\Cake\Datasource\ResultSetInterface|false deleteMany(iterable $entities, $options = [])
+ * @method \Faq\Model\Entity\Faq[]|\Cake\Datasource\ResultSetInterface deleteManyOrFail(iterable $entities, $options = [])
  * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class FaqsTable extends Table
@@ -46,7 +46,7 @@ class FaqsTable extends Table
 
         $this->belongsTo('FaqCategories', [
             'foreignKey' => 'faq_category_id',
-            'className' => 'CakephpFaq.FaqCategories',
+            'className' => 'Faq.FaqCategories',
         ]);
     }
 

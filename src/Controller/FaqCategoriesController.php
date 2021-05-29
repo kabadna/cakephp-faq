@@ -8,8 +8,8 @@ use Faq\Controller\AppController;
 /**
  * FaqCategories Controller
  *
- * @property \CakephpFaq\Model\Table\FaqCategoriesTable $FaqCategories
- * @method \CakephpFaq\Model\Entity\FaqCategory[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
+ * @property \Faq\Model\Table\FaqCategoriesTable $FaqCategories
+ * @method \Faq\Model\Entity\FaqCategory[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
 class FaqCategoriesController extends AppController
 {
