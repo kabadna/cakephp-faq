@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace CakephpFaq\Test\TestCase\Controller\Admin;
+namespace Faq\Test\TestCase\Controller\Admin;
 
 use Cake\TestSuite\IntegrationTestTrait;
 use Cake\TestSuite\TestCase;
-use CakephpFaq\Controller\Admin\FaqsController;
+use Faq\Controller\Admin\FaqsController;
 
 /**
  * CakephpFaq\Controller\Admin\FaqsController Test Case
@@ -22,7 +22,7 @@ class FaqsControllerTest extends TestCase
      * @var array
      */
     protected $fixtures = [
-        'plugin.CakephpFaq.Faqs',
+        'plugin.Faq.Faqs',
     ];
 
     /**

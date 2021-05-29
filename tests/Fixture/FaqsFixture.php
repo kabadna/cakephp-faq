@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace CakephpFaq\Test\Fixture;
+namespace Faq\Test\Fixture;
 
 use Cake\TestSuite\Fixture\TestFixture;
 

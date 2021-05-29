@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace CakephpFaq\Model\Entity;
+namespace Faq\Model\Entity;
 
 use Cake\ORM\Entity;
 

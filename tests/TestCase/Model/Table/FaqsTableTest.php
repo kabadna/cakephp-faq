@@ -1,20 +1,20 @@
 <?php
 declare(strict_types=1);
 
-namespace CakephpFaq\Test\TestCase\Model\Table;
+namespace Faq\Test\TestCase\Model\Table;
 
 use Cake\TestSuite\TestCase;
-use CakephpFaq\Model\Table\FaqsTable;
+use Faq\Model\Table\FaqsTable;
 
 /**
- * CakephpFaq\Model\Table\FaqsTable Test Case
+ * Faq\Model\Table\FaqsTable Test Case
  */
 class FaqsTableTest extends TestCase
 {
     /**
      * Test subject
      *
-     * @var \CakephpFaq\Model\Table\FaqsTable
+     * @var \Faq\Model\Table\FaqsTable
      */
     protected $Faqs;
 
@@ -24,8 +24,8 @@ class FaqsTableTest extends TestCase
      * @var array
      */
     protected $fixtures = [
-        'plugin.CakephpFaq.Faqs',
-        'plugin.CakephpFaq.FaqCategories',
+        'plugin.Faq.Faqs',
+        'plugin.Faq.FaqCategories',
     ];
 
     /**

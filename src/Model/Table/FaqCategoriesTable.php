@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace CakephpFaq\Model\Table;
+namespace Faq\Model\Table;
 
 use Cake\ORM\Table;
 use Cake\Validation\Validator;

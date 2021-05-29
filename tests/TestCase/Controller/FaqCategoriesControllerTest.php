@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace CakephpFaq\Test\TestCase\Controller;
+namespace Faq\Test\TestCase\Controller;
 
 use Cake\TestSuite\IntegrationTestTrait;
 use Cake\TestSuite\TestCase;
-use CakephpFaq\Controller\FaqCategoriesController;
+use Faq\Controller\FaqCategoriesController;
 
 /**
  * CakephpFaq\Controller\FaqCategoriesController Test Case

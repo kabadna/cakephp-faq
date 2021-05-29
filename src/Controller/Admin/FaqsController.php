@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace CakephpFaq\Controller\Admin;
+namespace Faq\Controller\Admin;
 
-use CakephpFaq\Controller\AppController;
+use Faq\Controller\AppController;
 
 /**
  * Faqs Controller
