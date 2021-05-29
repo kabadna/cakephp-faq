@@ -3,8 +3,6 @@ declare(strict_types=1);
 
 namespace Faq\Controller;
 
-use Faq\Controller\AppController;
-
 /**
  * Faqs Controller
  *
