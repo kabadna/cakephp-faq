@@ -1,7 +1,8 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \Cake\Datasource\EntityInterface $faq
+ * @var \Faq\Model\Entity\Faq $faq
+ * @var \Faq\Model\Entity\FaqCategory[] $faqCategories
  */
 ?>
 <div class="row">

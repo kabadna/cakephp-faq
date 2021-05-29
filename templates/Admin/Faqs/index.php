@@ -1,7 +1,7 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \Cake\Datasource\EntityInterface[]|\Cake\Collection\CollectionInterface $faqs
+ * @var \Faq\Model\Entity\Faq[] $faqs
  */
 ?>
 <div class="faqs index content">
@@ -25,7 +25,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($faqs as $faq): ?>
+                <?php foreach ($faqs as $faq) : ?>
                 <tr>
                     <td><?= $this->Number->format($faq->id) ?></td>
                     <td><?= h($faq->question) ?></td>
