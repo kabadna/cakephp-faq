@@ -16,7 +16,7 @@ class FaqCategoriesTableTest extends TestCase
      *
      * @var \Faq\Model\Table\FaqCategoriesTable
      */
-    protected $FaqCategories;
+    protected FaqCategoriesTable $FaqCategories;
 
     /**
      * Fixtures
@@ -37,7 +37,9 @@ class FaqCategoriesTableTest extends TestCase
     {
         parent::setUp();
         $config = $this->getTableLocator()->exists('FaqCategories') ? [] : ['className' => FaqCategoriesTable::class];
-        $this->FaqCategories = $this->getTableLocator()->get('FaqCategories', $config);
+        /** @var FaqCategoriesTable $faqCategories */
+        $faqCategories = $this->getTableLocator()->get('FaqCategories', $config);
+        $this->FaqCategories = $faqCategories;
     }
 
     /**
