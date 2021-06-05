@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace CakephpFaq;
+namespace Faq;
 
 use Cake\Core\BasePlugin;
 use Cake\Core\PluginApplicationInterface;
@@ -9,7 +9,7 @@ use Cake\Http\MiddlewareQueue;
 use Cake\Routing\RouteBuilder;
 
 /**
- * Plugin for CakephpFaq
+ * Plugin for Faq
  */
 class Plugin extends BasePlugin
 {
@@ -38,7 +38,7 @@ class Plugin extends BasePlugin
     public function routes(RouteBuilder $routes): void
     {
         $routes->plugin(
-            'CakephpFaq',
+            'Faq',
             ['path' => '/faq'],
             function (RouteBuilder $builder) {
                 // Add custom routes here
@@ -52,7 +52,7 @@ class Plugin extends BasePlugin
     /**
      * Add middleware for the plugin.
      *
-     * @param \Cake\Http\MiddlewareQueue $middleware The middleware queue to update.
+     * @param \Cake\Http\MiddlewareQueue $middlewareQueue The middleware queue to update.
      * @return \Cake\Http\MiddlewareQueue
      */
     public function middleware(MiddlewareQueue $middlewareQueue): MiddlewareQueue
