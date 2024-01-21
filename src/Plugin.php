@@ -38,27 +38,30 @@ class Plugin extends BasePlugin
      */
     public function routes(RouteBuilder $routes): void
     {
+        // Admin/plugin routing
         $routes->prefix('Admin', function ($routes) {
-
             $routes->plugin(
                 'Faq',
                 ['path' => '/faq'],
                 function (RouteBuilder $builder) {
-                    // Admin routing
-                    $builder->prefix('Admin', function (RouteBuilder $pluginPrefixRoutes) {
-                        // ここのすべてのルートには、 `/admin` というプレフィックスが付きます。
-                        // また、 `'prefix' => 'Admin'` ルート要素が追加されます。
-                        // これは、これらのルートのURLを生成するときに必要になります
-                        $pluginPrefixRoutes->fallbacks();
-                    });
                     // Add custom routes here
 
-                    $builder->fallbacks();
+                    $builder->fallbacks(DashedRoute::class);
                 }
             );
-
-            $routes->fallbacks(DashedRoute::class);
         });
+
+        // plugin routing
+        $routes->plugin(
+            'Faq',
+            ['path' => '/faq'],
+            function (RouteBuilder $builder) {
+                // Add custom routes here
+
+                $builder->fallbacks(DashedRoute::class);
+            }
+        );
+
         parent::routes($routes);
     }
 
