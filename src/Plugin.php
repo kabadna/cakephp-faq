@@ -6,6 +6,7 @@ namespace Faq;
 use Cake\Core\BasePlugin;
 use Cake\Core\PluginApplicationInterface;
 use Cake\Http\MiddlewareQueue;
+use Cake\Routing\Route\DashedRoute;
 use Cake\Routing\RouteBuilder;
 
 /**
@@ -37,15 +38,30 @@ class Plugin extends BasePlugin
      */
     public function routes(RouteBuilder $routes): void
     {
+        // Admin/plugin routing
+        $routes->prefix('Admin', function ($routes) {
+            $routes->plugin(
+                'Faq',
+                ['path' => '/faq'],
+                function (RouteBuilder $builder) {
+                    // Add custom routes here
+
+                    $builder->fallbacks(DashedRoute::class);
+                }
+            );
+        });
+
+        // plugin routing
         $routes->plugin(
             'Faq',
             ['path' => '/faq'],
             function (RouteBuilder $builder) {
                 // Add custom routes here
 
-                $builder->fallbacks();
+                $builder->fallbacks(DashedRoute::class);
             }
         );
+
         parent::routes($routes);
     }
 

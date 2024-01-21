@@ -6,7 +6,7 @@
 ?>
 <div class="faqs index content">
     <?= $this->Html->link(__('New Faq'), ['action' => 'add'], ['class' => 'button float-right']) ?>
-    <h3><?= __('Faqs') ?></h3>
+    <h3><?= __('Faqs') ?>(Admin)</h3>
     <div class="table-responsive">
         <table>
             <thead>
