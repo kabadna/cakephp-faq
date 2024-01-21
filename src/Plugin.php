@@ -44,6 +44,13 @@ class Plugin extends BasePlugin
                 'Faq',
                 ['path' => '/faq'],
                 function (RouteBuilder $builder) {
+                    // Admin routing
+                    $builder->prefix('Admin', function (RouteBuilder $pluginPrefixRoutes) {
+                        // ここのすべてのルートには、 `/admin` というプレフィックスが付きます。
+                        // また、 `'prefix' => 'Admin'` ルート要素が追加されます。
+                        // これは、これらのルートのURLを生成するときに必要になります
+                        $pluginPrefixRoutes->fallbacks();
+                    });
                     // Add custom routes here
 
                     $builder->fallbacks();
